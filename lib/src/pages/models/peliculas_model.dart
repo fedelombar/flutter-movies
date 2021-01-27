@@ -47,7 +47,7 @@ class Pelicula {
 
   Pelicula.fromJsonMap(Map<String, dynamic> json) {
     adult = json['adult'];
-    backdropPath = json['op_path'];
+    backdropPath = json['backdrop_path'];
     genreIds = json['genre_ids'].cast<int>();
     id = json['id'];
     originalLanguage = json['original_language'];
@@ -67,6 +67,14 @@ class Pelicula {
       return 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/600px-No_image_available.svg.png';
     } else {
       return 'https://image.tmdb.org/t/p/w500/$posterPath';
+    }
+  }
+
+  getBackgroundImg() {
+    if (posterPath == null) {
+      return 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/600px-No_image_available.svg.png';
+    } else {
+      return 'https://image.tmdb.org/t/p/w500/$backdropPath';
     }
   }
 }
