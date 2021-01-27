@@ -44,7 +44,7 @@ class Actor {
 
   getFoto() {
     if (profilePath == null) {
-      return 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.intra-tp.com%2Fequipo%2Fno-avatar%2F&psig=AOvVaw2EYvPm0gvru_tKdO625KF_&ust=1611865837933000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDb4qf6vO4CFQAAAAAdAAAAABAD';
+      return 'http://forum.spaceengine.org/styles/se/theme/images/no_avatar.jpg';
     } else {
       return 'https://image.tmdb.org/t/p/w500/$profilePath';
     }
