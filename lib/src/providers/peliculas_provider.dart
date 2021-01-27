@@ -54,6 +54,5 @@ class PeliculasProvider {
     popularesSink(_populares);
 
     return resp;
-    //test
   }
 }
